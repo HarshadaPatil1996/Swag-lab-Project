@@ -15,6 +15,7 @@ public class SwagLab_Home_Page
 	
 	@FindBy(xpath = "//button[@id='remove-sauce-labs-backpack']") private WebElement remove;
 	
+	
 	public SwagLab_Home_Page (WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -34,11 +35,18 @@ public class SwagLab_Home_Page
 		
 	}
 	
-	public String verify_SwagLab_Home_Page_text() 
+	public String Get_SwagLab_Home_Page_Btntext() 
 	{
        String text=remove.getText();
 		
 		return text;
+	
 	}
+	
+	public void Click_SwagLab_Home_Page_RemoveBtn() 
+	{
+		remove.click();
+	}
+	
 	
 }

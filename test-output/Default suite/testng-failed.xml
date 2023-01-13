@@ -5,10 +5,10 @@
     <classes>
       <class name="SwagLab_Login_test.HomePage_test">
         <methods>
+          <include name="Verify_select_Item"/>
           <include name="Logout"/>
           <include name="Login"/>
           <include name="Close_Browser"/>
-          <include name="Verify_AddtoCart_Text_Change"/>
           <include name="Open_Browser"/>
         </methods>
       </class> <!-- SwagLab_Login_test.HomePage_test -->
